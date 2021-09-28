@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 // smart contract files must start with a capital letter
 
-// // to Deploy to Rinkeby testnet. 
-// // Run this command from the root directory. Notice all we do is change it from localhost to rinkeby.
-// // npx hardhat run scripts/deploy.js --network rinkeby
+// to Deploy to Rinkeby testnet. 
+// Run this command from the root directory. Notice all we do is change it from localhost to rinkeby.
+// npx hardhat run scripts/deploy.js --network rinkeby
 
 pragma solidity ^0.8.0;
 
@@ -16,10 +16,9 @@ contract KantoPokePortal {
 
     event NewVotes(address indexed from, uint256 timestamp);
 
-    
     struct Vote {
-        address voter; // The address of the user who waved.
-        uint256 timestamp; // The timestamp when the user waved.
+        address voter; // The address of the user who votes.
+        uint256 timestamp; // The timestamp when the user votes.
     }
 
     Vote[] votes;
